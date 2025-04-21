@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AutoDrive — Автосалон</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AutoDrive</h1>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#catalog">Авто</a>
+            <a href="#services">Послуги</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+    <!-- 
+    <div class="hero">
+        <h1>Знайди своє ідеальне авто з AutoDrive</h1>
+        <p>Нові та вживані автомобілі з гарантією якості</p>
+    </div> -->
+
+    <section class="section" id="catalog">
+        <h2>Наші авто</h2>
+        <div class="cars">
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/camry.png  " class="car-image" alt="Toyota Camry">
+                </div>
+                <h3>Toyota Camry</h3>
+                <p>2022 • 2.5L • Автомат</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">Пропонуємо до вашої уваги автомобіль TOYOTA CAMRY 70.Рік виготовлення
+                        2022. Один власник. Стан нового авто. Пробіг 40 тис. км.
+                        Авто в максимальній комплектації.
+                        28 700$</span>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/bmwx5.png" class="car-image" alt="BMW X5">
+                </div>
+                <h3>BMW X5</h3>
+                <p>2021 • 3.0L • Гібрид</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">В продажі BMW X5 (G05) 40i
+                        Мотор 3.0 бензин (b58) з мягким гібридом
+                        <br />Два ключі
+                        <br />Два комплекти різноширокої гуми
+                        <br />Два комплекти килимків
+                        <br />М пакет
+                        <br />ПНЕВМОПІДВІСКА
+                        <br />панорама, чорна стеля
+                        <br />проекційний дисплей
+                        <br />розпізнавання дорожніх знаків
+                        <br />камери 360 з 3D функцією, парктроніки,
+                        автопаркування
+                        <br />підігрів всіх сидінь, руля і підлокітників
+                        <br />4х зонний клімат контроль
+                        <br />бездротова зарядка
+                        <br />керування жестами
+                        <br />безключовий доступ
+                        <br />додатково обезшумлені арки, підлога, двері і дрібні деталі в салоні
+                        <br />передня європейська лазерна оптика
+                        <br />задня європейська оптика
+                        Пробіг 35 тис. км.
+                        69 000$</span>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/civic.png" class="car-image" alt="Honda Civic">
+                </div>
+                <h3>Honda Civic</h3>
+                <p>2020 • 2.0L • Бензин</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">Honda civic 2020 2.0 бензин
+                        Детальніше: Автомобіль привезений з Америки без пошкоджень та ДТП. Повністю в рідній фарбі! Без
+                        пробігу та власника в Україні
+                        Комплектація:
+                        <br />адаптивний круїз контроль
+                        <br />контроль за смугою руху
+                        <br />запобігання зіткнення
+                        <br />система доступу без ключа
+                        <br />датчик світла та дощу
+                        <br />запуск з кнопки
+                        <br />клімат контроль
+                        <br />камера заднього огляду
+                        <br />комбінований салон
+                        <br />чорна стеля
+                        <br />під кермові пелюстки та інше.
+                        Пробіг 75 тис. км.
+                        15 200$</span>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/sportage.png" class="car-image" alt="Audi A4">
+                </div>
+                <h3>Kia Sportage</h3>
+                <p>2021 • 2.4L • Бензин</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">Автомобіль привезений із США.
+                        Мито сплачено в повному обсязі, сертифікат в наявності!
+                        Автомобіль повністю в рідній фарбі!
+                        Дуже класний і комфортний автомобіль.
+                        <br />Повний привід.
+                        <br />Коробка, звичайний гідротрансформатор 6
+                        ступеневий.
+                        Робити по авто нічого не потрібно.
+                        <br />Стан нового авто.
+                        Пробіг 65 тис. км.
+                        17 300$</span>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/audia4.png" class="car-image" alt="Kia Sportage">
+                </div>
+                <h3>Audi A4</h3>
+                <p>2023 • 2.0L • Дизель</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">Офіційний автомобіль, куплений в салоні і на гарантії.
+                        Один власник.
+                        Дизель 2л, повний привід Quattro, спортивний пакет S-Line в чорному кольорі, спрортивні сидіння
+                        і чорна стеля, анти хром ззовні.
+                        Матричні лед фари.
+                        Дуже хороша комплектація машини (майже всі оції, які були доступні), є все що потрібно для
+                        комфортної їзди.
+                        Машина зберігалась в гаражі.
+                        Одразу при купівлі було зроблено тонування вікон і бронеплівка по всьому авто.
+                        Пробіг 8 тис. км.
+                        42 300$</span>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image-container">
+                    <img src="./cars/mers.png" class="car-image" alt="Mercedes-Benz C-Class">
+                </div>
+                <h3>Mercedes-Benz C-Class</h3>
+                <p>2021 • 2.0L • Бензин</p>
+                <div class="tooltip">
+                    Дізнатись більше
+                    <span id="tooltip-text">Машина в ідеальному стані, вкладень не потребує. Відремонтована повністю
+                        оригінальними запчастинами. Один власник в Україні.
+                        Комплектація дуже багата: night edition, повний AMG обвіс із заводу, 18 радіус дисків, авто
+                        дальній, повна панорама,
+                        повний електро пакет, камера заднього
+                        виду, дисктронік, без ключового доступу, значок з підсвічуванням, підсвічування салону з великим
+                        вибором кольорів, комбінована шкіра з алькантарою сидіння + кермо та багато іншого.
+                        Пробіг 39 тис. км.
+                        34 999$</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <h2>Наші послуги</h2>
+        <ul>
+            <li>Продаж нових та вживаних авто</li>
+            <li>Кредитування та лізинг</li>
+            <li>Сервісне обслуговування</li>
+            <li>Обмін авто (trade-in)</li>
+        </ul>
+    </section>
+
+    <section class="section" id="about">
+        <h2>Про нас</h2>
+        <p>AutoDrive — це сучасний автосалон, що працює з 2010 року. Ми пропонуємо широкий вибір авто, індивідуальний
+            підхід та високий рівень сервісу.</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Контакти</h2>
+        <p>Телефон: +380 67 123 45 67</p>
+        <p>Email: info@autodrive.ua</p>
+        <p>Адреса: м. Київ, просп. Перемоги, 100</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AutoDrive. Усі права захищено.</p>
+    </footer>
+
+    <script>
+        const inputs = document.querySelectorAll('.tooltip');
+
+        inputs.forEach(i => {
+            i.addEventListener('click', (e) => {
+
+                inputs.forEach(j => {
+                    j.classList.remove('active');
+                });
+
+                e.stopPropagation();
+                i.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener('click', () => {
+            inputs.forEach(i => {
+                i.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

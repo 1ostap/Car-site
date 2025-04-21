@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1c2e4a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #1c2e4a;
+    margin-bottom: 20px;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.car-card {
+    flex: 1 1 300px;
+    width: 40%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #1c2e4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cars {
+        flex-direction: column;
+    }
+}
+
+.car-image-container {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.car-image {
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip span {
+    visibility: hidden;
+    width: 12em;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 10;
+    top: -0.5em;
+    left: 100%;
+    margin-left: 1em;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.tooltip span::after {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltip.active span {
+    visibility: visible;
+    opacity: 1;
+}
